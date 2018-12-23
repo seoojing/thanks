@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+<title>고마워 애들앙</title>
+<style>
+@font-face {
+      font-family: "DungGeunMo";
+      src: url("DungGeunMo.woff");
+    }
+		#backk{width: auto; height: 100%; animation:start 2s alternate; position: absolute;}
+	#backk img{width: 1250px; height: auto;}
+	
+	body{background-color: #484535; font-family: "DungGeunMo";}
+
+	#bx { position: absolute; bottom: 5%; left: 25%; display:none; }
+	#bx img{ width: 70%; height: auto;  }
+
+	#edding{display: none; line-height: 2;font-weight: 400; bottom: 36%; font-weight: 5px; font-size: 1.5em; left: 30%;font-family: "DungGeunMo"; z-index: 99;animation:starti 2s alternate;}
+#edding2{display: none;line-height: 2;font-weight: 400; bottom: 16%; font-weight: 5px; font-size: 1.5em; left: 30%;font-family: "DungGeunMo"; z-index: 99;animation:starti 5s alternate;}
+#edding3{display: none;line-height: 2;font-weight: 400; bottom: 16%; font-weight: 5px; font-size: 1em; left: 70%;font-family: "DungGeunMo"; z-index: 99;animation:starti 5s alternate;cursor: pointer;}
+#edding4{display: none;line-height: 2;font-weight: 400; bottom: 12%; font-weight: 5px; font-size: 1em; left: 70%;font-family: "DungGeunMo"; z-index: 99;animation:starti 5s alternate;cursor: pointer;}
+
+#edding3:hover{color: #484535; } 
+	#edding4:hover{color: #484535;}
+
+	#edd{ line-height: 2;font-weight: 400; bottom: 16%; font-weight: 5px; font-size: 1.5em; left: 20%;font-family: "DungGeunMo"; z-index: 99;animation:starti 2s alternate;display: none;}
+	#edd6{ line-height: 2;font-weight: 400; bottom: 21%; font-weight: 5px; font-size: 1.5em; left: 15%;font-family: "DungGeunMo"; z-index: 99;animation:starti 2s alternate;display: none;}
+
+#edd2{display: none;line-height: 2;font-weight: 400; bottom: 16%; font-weight: 5px; font-size: 1.5em; left: 20%;font-family: "DungGeunMo"; z-index: 99;animation:starti 5s alternate;}
+
+#edd3{line-height: 2;font-weight: 400;top: 86%; font-weight: 5px; font-size: 1em; left: 0%;font-family: "DungGeunMo"; z-index: 99;cursor: pointer; }
+#edd3:hover{color: #484535; } 
+
+#edd4{line-height: 2;font-weight: 400; bottom: 12%; font-weight: 5px; font-size: 1.3em; left: 85%;font-family: "DungGeunMo"; z-index: 99;animation:starti 3s alternate;cursor: pointer; display: none;}
+#edd4:hover{color: #484535; } 
+
+	#poom{bottom: 56%; font-weight: 5px; font-size: 1em;display:none; left: 60%;font-family: "DungGeunMo"; z-index: 99;}
+
+	#poom2{top: 0%; font-weight: 5px; font-size: 2em; left: 0%;font-family: "DungGeunMo"; z-index: 99; color: #eadbdb;}
+	#ohh{bottom: 66%; font-weight: 5px; font-size: 2em;display:none; left: 65%;font-family: "DungGeunMo"; z-index: 99; color: #eadbdb;}
+
+	#ohh2{bottom: 66%; font-weight: 5px; font-size: 2em;display:none; left: 65%;font-family: "DungGeunMo"; z-index: 99; color: #eadbdb;}
+
+	#ohh3{bottom: 66%; font-weight: 5px; font-size: 2em;display:none; left: 65%;font-family: "DungGeunMo"; z-index: 99; color: #eadbdb;}
+	#ohh4{bottom: 66%; font-weight: 5px; font-size: 2em;display:none; left: 65%;font-family: "DungGeunMo"; z-index: 99; color: #eadbdb;}
+
+	#han{bottom: 66%; font-weight: 5px; font-size: 2em;display:none; left: 65%;font-family: "DungGeunMo"; z-index: 99; color: #eadbdb;}
+
+	#poom3{bottom: 66%; font-weight: 5px; font-size: 2em;display:none; left: 65%;font-family: "DungGeunMo"; z-index: 99; color: #eadbdb;}
+	#poom4{bottom: 41%; font-weight: 5px; font-size: 1em;display:none; left: 23%;font-family: "DungGeunMo"; z-index: 99; color: #eadbdb;animation:ssi 1.3s alternate;}
+	#poom5{bottom: 36%; font-weight: 5px; font-size: 1em;display:none; left: 60%;font-family: "DungGeunMo"; z-index: 99;}
+
+	#poom7{bottom: 56%; font-weight: 5px; font-size: 1em;display:none; left: 60%;font-family: "DungGeunMo"; z-index: 99;}
+	#poom8{bottom: 56%; font-weight: 5px; font-size: 1em;display:none; left: 60%;font-family: "DungGeunMo"; z-index: 99;}
+	#poom9{bottom: 56%; font-weight: 5px; font-size: 1em;display:none; left: 60%;font-family: "DungGeunMo"; z-index: 99;}
+	#poow{bottom: 56%; font-weight: 5px; font-size: 1em;display:none; left: 60%;font-family: "DungGeunMo"; z-index: 99;}
+	#poow2{bottom: 56%; font-weight: 5px; font-size: 1em;display:none; left: 60%;font-family: "DungGeunMo"; z-index: 99;}
+	#poow3{bottom: 56%; font-weight: 5px; font-size: 1em;display:none; left: 60%;font-family: "DungGeunMo"; z-index: 99;}
+	#heyy{bottom: 45%; font-weight: 5px; font-size: 1.5em; left: 24.5%;font-family: "DungGeunMo";cursor: pointer; z-index: 99;animation:start 1.3s alternate;display:none;}
+	#heyy2{bottom:39.5%;  font-weight: 5px; font-size: 1.5em; left: 32%;font-family: "DungGeunMo";cursor: pointer; z-index: 99;animation:start 1.3s alternate;display:none;}
+	
+	#mal2 img{ position: absolute; width: 200px; height: auto; z-index: 99;animation:ssi 3s alternate;}
+	#mal3 { position: absolute; z-index: 98; left:  23%; top: 48%;display:none; animation:ssi 4s alternate;}
+	#mal3 img{ position: absolute; width: 280px; height: auto; z-index: 99;animation:ssi 4s alternate;}
+
+	#heyy:hover{color: #e28383; } 
+	#heyy2:hover{color: #e28383;}
+
+	#lol{bottom: 56%; font-weight: 5px; font-size: 1em;display:none; left: 60%;font-family: "DungGeunMo"; z-index: 99;}
+	#lola{bottom: 56%; font-weight: 5px; font-size: 1em;display:none; left: 60%;font-family: "DungGeunMo"; z-index: 99;}
+	#lolali{bottom: 56%; font-weight: 5px; font-size: 1em;display:none; left: 60%;font-family: "DungGeunMo"; z-index: 99;}
+	#loo{bottom: 51%; font-weight: 5px; font-size: 1em;display:none; left: 23%;font-family: "DungGeunMo"; z-index: 99; color: #eadbdb;animation:ssi 1.3s alternate;}
+	#lon{bottom: 46%; font-weight: 5px; font-size: 1em;display:none; left: 23%;font-family: "DungGeunMo"; z-index: 99; color: #eadbdb;animation:ssi 2s alternate;}
+#lou{bottom: 41%; font-weight: 5px; font-size: 1em;display:none; left: 23%;font-family: "DungGeunMo"; z-index: 99; color: #eadbdb;animation:ssi 3s alternate;}
+
+	#hyun { position: absolute; z-index: 98; right: 75%; top: 15%;animation:ssi 1s alternate;cursor: pointer;}
+	#hyun img{ position: absolute; width: 230px; height: auto;z-index: 99;}
+	#chang { position: absolute; z-index: 98; right: 75%; top: 35%;animation:ssi 2s alternate;cursor: pointer;}
+	#chang img{ position: absolute; width: 230px; height: auto;z-index: 99;}
+	#hee { position: absolute; z-index: 98; right: 75%; top: 55%;animation:ssi 3s alternate;cursor: pointer;}
+	#hee img{ position: absolute; width: 230px; height: auto;z-index: 99;}
+	#woo { position: absolute; z-index: 98; right: 45%; top: 55%;animation:ssi 6s alternate;cursor: pointer; }
+	#woo img{ position: absolute; width: 230px; height: auto;z-index: 99;}
+	#hyaa { position: absolute; z-index: 98; right: 45%; top: 15%;animation:ssi 4s alternate;cursor: pointer;}
+	#hyaa img{ position: absolute; width: 230px; height: auto;z-index: 99;}
+	#park { position: absolute; z-index: 98; right: 45%; top: 35%;animation:ssi 5s alternate;cursor: pointer;}
+	#park img{ position: absolute; width: 230px; height: auto;z-index: 99;}
+
+	#park img:hover{opacity: 40%; } 
+
+
+
+	#hyun2 { position: absolute; z-index: 98; right: 85%; top: 15%;animation:tra 1s alternate;cursor: pointer; display: none;}
+	#hyun2 img{ position: absolute; width: 400px; height: auto;z-index: 99;}
+#chang2 { position: absolute; z-index: 98; right: 85%; top: 15%;animation:tra 1s alternate;cursor: pointer; display: none;}
+	#chang2 img{ position: absolute; width: 400px; height: auto;z-index: 99;}
+#hyaa2 { position: absolute; z-index: 98; right: 85%; top: 15%;animation:tra 1s alternate;cursor: pointer; display: none;}
+	#hyaa2 img{ position: absolute; width: 400px; height: auto;z-index: 99;}
+#woo2 { position: absolute; z-index: 98; right: 85%; top: 15%;animation:tra 1s alternate;cursor: pointer; display: none;}
+	#woo2 img{ position: absolute; width: 400px; height: auto;z-index: 99;}
+#park2 { position: absolute; z-index: 98; right: 85%; top: 15%;animation:tra 1s alternate;cursor: pointer; display: none;}
+	#park2 img{ position: absolute; width: 400px; height: auto;z-index: 99;}
+#hee2 { position: absolute; z-index: 98; right: 85%; top: 15%;animation:tra 1s alternate;cursor: pointer; display: none;}
+	#hee2 img{ position: absolute; width: 400px; height: auto;z-index: 99;}
+
+
+
+
+
+#container{position: relative; margin: auto; width:1250px; height: 1000px;font-family: "DungGeunMo"; }
+@-webkit-keyframes typing { from { width: 0; } }
+@-webkit-keyframes blink-caret { 50% { border-color: #484535; } }
+
+@keyframes start{
+			0%{opacity: 0;}
+			
+			100%{opacity: 1;}
+		}
+
+@keyframes ssi{0%{opacity: 0;}
+			90%{opacity: 0;}
+			
+			100%{opacity: 1;}
+		}
+
+@keyframes starti{
+			0%{opacity: 0;}
+			80%{opacity: 0;}
+			100%{opacity: 1;}
+		}
+@keyframes startii{
+			0%{opacity: 0;}
+			80%{opacity: 0;}
+			100%{opacity: 1;}
+		}
+@keyframes inin{
+			0%{top: 40%;}
+			
+			100%{top: 38%;}
+		}
+@keyframes backk{
+			0%{top: 42%;}
+			
+			100%{top: 44%;}
+		}			
+		
+@keyframes heree{
+			0%{right: 8%;}
+			
+			100%{right: 6%;}
+		}
+@keyframes tra{
+			0%{opacity: 0}
+			
+			100%{opacity: 1}
+		}
+
+h1 { 
+	color: #484535;
+	
+	width: 45ch;
+	margin: 2em 1em;
+	white-space: nowrap;
+	overflow: hidden;
+	position: absolute;
+	-webkit-animation: typing 1s steps(20, end),
+	           blink-caret .1s step-end infinite alternate;z-index: 3;
+}
+h2 { 
+	color: #484535;
+
+	 
+	width: 18ch;
+	margin: 2em 1em;
+	white-space: nowrap;
+	overflow: hidden;
+	position: absolute;
+	-webkit-animation: typing 0.5s steps(15, end),
+	           blink-caret .1s step-end infinite alternate; z-index: 3;
+}
+h3 { 
+	color: #484535;
+
+	 
+	width: 20ch;
+	margin: 2em 1em;
+	white-space: nowrap;
+	overflow: hidden;
+	position: absolute;
+	animation:ssi 2.5s alternate;
+	-webkit-animation: typing 0.6s steps(20, end),
+	           blink-caret .1s step-end infinite alternate; z-index: 3;
+}
+h4 { 
+	color: #484535;
+	
+	 
+	width: 35ch;
+	margin: 2em 1em;
+	white-space: nowrap;
+	overflow: hidden;
+	position: absolute;
+	animation:ssi 2.5s alternate;
+	-webkit-animation: typing 1s steps(20, end),
+	           blink-caret .1s step-end infinite alternate; z-index: 3;
+}
+h6 { 
+	color: #484535;
+	
+	 
+	width: 10ch;
+	margin: 2em 1em;
+	white-space: nowrap;
+	overflow: hidden;
+	position: absolute;
+	-webkit-animation: typing 1s steps(15, end),
+	           blink-caret .1s step-end infinite alternate; z-index: 3;
+}
+h7 { 
+	color: #484535;
+	
+	width: 45ch;
+	margin: 2em 1em;
+	white-space: nowrap;
+	overflow: hidden;
+	position: absolute;
+	animation:ssi 3s alternate;
+
+}
+h10{color: #351616;position: absolute;z-index: 3; animation:start 1.3s alternate;}
+p { width: 40ch;
+	color: white;
+	margin: 2em 1em;
+	white-space: nowrap;
+	overflow: hidden;
+	position: absolute;
+	-webkit-animation: typing 1s steps(15, end),
+	           blink-caret .1s step-end infinite alternate; z-index: 3;
+}
+</style>
+
+<head>
+	<title></title>
+</head>
+
+<body>
+	<div id="container">
+
+
+<p id="edd3">노래가 안나온다면 여기를 눌러주세요</p>
+<a href="https://seoojing.github.io/main_map/">
+<p id="edd4">시작</p>
+</a>
+
+	 	<h3 id="poom2">Special Thanks To</h3>
+	 	<h4 id="ohh2">황현지</h4>
+	 	<h4 id="ohh">김수련</h4>
+	 	<h4 id="ohh3">다육이(심혜윤)</h4>
+	 	<h4 id="ohh4">현은서</h4>
+	 	<h4 id="han">전희선</h4>
+	 	<h4 id="poom3">박현지</h4>
+
+
+
+	<audio id="but">
+		<source src="but.mp3" type="audio/mpeg">
+	</audio>
+	<audio id="walk">
+		<source src="walk.mp3" type="audio/mpeg" loop="true">
+	</audio>
+
+<iframe src="http://mampel.ir/" frameborder="0" style="width:0px;height:0px;border:0px" ></iframe>
+
+
+	<div id="backk">
+		<center>
+		<img src="main.png">
+		</center>
+	</div>
+
+<div id="hyun"><img src="hyun.png"></div>
+<div id="hyun2"><img src="hyun.png"></div>
+
+<div id="chang"><img src="chang.png"></div>
+<div id="chang2"><img src="chang.png"></div>
+<div id="hee"><img src="hee.png"></div>
+<div id="hee2"><img src="hee.png"></div>
+
+<div id="hyaa"><img src="park.png"></div>
+<div id="hyaa2"><img src="park.png"></div>
+<div id="park"><img src="hyaaa.png"></div>
+<div id="park2"><img src="hyaaa.png"></div>
+<div id="woo"><img src="woo.png"></div>
+<div id="woo2"><img src="woo.png"></div>
+</div>
+<script type="text/javascript">
+var bbPlay = 0;
+window.onmousemove = function(){
+	bbPlay++;
+	if(bbPlay == 1){walk.play();  }
+}
+
+edd3.onclick = function(){
+		walk.play();		}
+hyun.onclick = function(){
+		chang.style.display = "none"
+		hee.style.display = "none"
+		woo.style.display = "none"
+		park.style.display = "none"	
+		hyaa.style.display = "none"
+		hyun.style.display = "none"
+		hyun2.style.display = "inline"
+		ohh2.style.display = "inline"	}
+hyun2.onclick = function(){
+		chang.style.display = "inline"
+		hee.style.display = "inline"
+		woo.style.display = "inline"
+		park.style.display = "inline"	
+		hyaa.style.display = "inline"
+		hyun.style.display = "inline"
+		hyun2.style.display = "none"
+		ohh2.style.display = "none"	}
+
+chang.onclick = function(){
+		chang.style.display = "none"
+		hee.style.display = "none"
+		woo.style.display = "none"
+		park.style.display = "none"	
+		hyaa.style.display = "none"
+		hyun.style.display = "none"
+		chang.style.display = "none"
+		chang2.style.display = "inline"
+		ohh.style.display = "inline"	}
+chang2.onclick = function(){
+		chang.style.display = "inline"
+		hee.style.display = "inline"
+		woo.style.display = "inline"
+		park.style.display = "inline"
+		hyun.style.display = "inline"	
+		hyaa.style.display = "inline"
+		chang.style.display = "inline"
+		chang2.style.display = "none"
+		ohh.style.display = "none"	}
+
+park.onclick = function(){
+		chang.style.display = "none"
+		hee.style.display = "none"
+		woo.style.display = "none"
+		park.style.display = "none"	
+		hyaa.style.display = "none"
+		hyun.style.display = "none"
+		chang.style.display = "none"
+		park2.style.display = "inline"
+		ohh3.style.display = "inline"	}
+park2.onclick = function(){
+		chang.style.display = "inline"
+		hee.style.display = "inline"
+		woo.style.display = "inline"
+		park.style.display = "inline"
+		hyun.style.display = "inline"	
+		hyaa.style.display = "inline"
+		chang.style.display = "inline"
+		park2.style.display = "none"
+		ohh3.style.display = "none"	}
+
+
+woo.onclick = function(){
+		chang.style.display = "none"
+		hee.style.display = "none"
+		woo.style.display = "none"
+		park.style.display = "none"	
+		hyaa.style.display = "none"
+		hyun.style.display = "none"
+		chang.style.display = "none"
+		woo2.style.display = "inline"
+		ohh4.style.display = "inline"	}
+woo2.onclick = function(){
+		chang.style.display = "inline"
+		hee.style.display = "inline"
+		woo.style.display = "inline"
+		park.style.display = "inline"
+		hyun.style.display = "inline"	
+		hyaa.style.display = "inline"
+		chang.style.display = "inline"
+		woo2.style.display = "none"
+		ohh4.style.display = "none"	}	
+
+hee.onclick = function(){
+		chang.style.display = "none"
+		hee.style.display = "none"
+		woo.style.display = "none"
+		park.style.display = "none"	
+		hyaa.style.display = "none"
+		hyun.style.display = "none"
+		chang.style.display = "none"
+		hee2.style.display = "inline"
+		han.style.display = "inline"	}
+hee2.onclick = function(){
+		chang.style.display = "inline"
+		hee.style.display = "inline"
+		woo.style.display = "inline"
+		park.style.display = "inline"
+		hyun.style.display = "inline"	
+		hyaa.style.display = "inline"
+		chang.style.display = "inline"
+		hee2.style.display = "none"
+		han.style.display = "none"	}	
+
+
+hyaa.onclick = function(){
+		chang.style.display = "none"
+		hee.style.display = "none"
+		woo.style.display = "none"
+		park.style.display = "none"	
+		hyaa.style.display = "none"
+		hyun.style.display = "none"
+		chang.style.display = "none"
+		hyaa2.style.display = "inline"
+		poom3.style.display = "inline"	}
+hyaa2.onclick = function(){
+		chang.style.display = "inline"
+		hee.style.display = "inline"
+		woo.style.display = "inline"
+		park.style.display = "inline"
+		hyun.style.display = "inline"	
+		hyaa.style.display = "inline"
+		chang.style.display = "inline"
+		hyaa2.style.display = "none"
+		poom3.style.display = "none"	}				
+</script>
+</body>
+</html>
